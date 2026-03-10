@@ -21,12 +21,20 @@ Applies to all cross-functional projects that deliver product features, services
 - Stakeholders: provide inputs and approvals.
 
 ## Key Artifacts
-- Project Charter / One-pager
-- Roadmap and Release Plan
-- Sprint/Iteration Backlog
-- Acceptance Criteria & Definition of Done
-- Risk Register
-- Retrospective notes and action items
+
+All artifacts live in `docs/` in the project repository. Reference them from issues and PRs using relative links (e.g., `See [Risk Register](docs/templates/risk-register.md)`).
+
+| Artifact | Location |
+|---|---|
+| Project Charter / One-pager | `docs/octoacme-project-initiation.md` |
+| Roadmap and Release Plan | `docs/octoacme-release-and-deployment.md` |
+| Sprint/Iteration Backlog | GitHub Issues + project board |
+| Acceptance Criteria & Definition of Done | `docs/templates/definition-of-done.md` |
+| Risk Register | `docs/templates/risk-register.md` |
+| Decision Log | `docs/templates/decision-log.md` |
+| Weekly Status Update | `docs/templates/status-update-template.md` |
+| Release Readiness Checklist | `docs/templates/release-readiness-checklist.md` |
+| Retrospective Action Items | `docs/templates/retro-action-items.md` |
 
 ## Lifecycle (high-level)
 1. Initiation: problem statement, stakeholders, high-level timeline.
@@ -42,5 +50,7 @@ Applies to all cross-functional projects that deliver product features, services
 - Ad-hoc escalations as needed
 
 ## How to use these docs
-- Keep the Project Charter updated in the project repo.
+- Keep the Project Charter updated in the project repo (see `docs/octoacme-project-initiation.md`).
 - Add process-specific docs into `.copilot/` if you want Copilot Spaces to use them as context.
+- All reusable templates live in `docs/templates/`. Copy them into issues, PRs, or dedicated project files as needed.
+- Cross-phase references: Initiation → Planning → Execution → Release → Retrospective (see each doc for entry/exit criteria).
